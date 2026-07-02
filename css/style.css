@@ -641,3 +641,100 @@ div#valveModal {
   }
 }
 
+/* CI Image Container Styles */
+.ci_img {
+  width: 280px !important;
+  height: 280px !important;
+  position: relative;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  overflow: hidden !important;
+}
+
+.ci_img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.ci_img a {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.ci_img img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  transition: transform 0.5s ease;
+}
+
+.ci_img:hover img {
+  transform: scale(1.08);
+}
+
+/* Product Details Overlay */
+.product-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 34, 77, 0.95); /* Sleek matching dark background */
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.ci_img:hover .product-details-overlay {
+  opacity: 1;
+}
+
+.product-details-overlay h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.product-details-overlay p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #f8f9fa;
+}
+
+.product-details-overlay .btn-sm {
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
+
+.hover-elevate {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-elevate:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  background-color: #ffffff !important;
+}
+
+
+
